@@ -44,7 +44,7 @@ def filter_numbers(xstr, d_type):
     elif d_type == PRIME:
         for i in xstr:
             n = 2
-            if i <= 2:
+            if i < 2:
                 izPrime = False
             else:
                 izPrime = True
@@ -57,7 +57,7 @@ def filter_numbers(xstr, d_type):
                 x.append(i)
     return x
 
-print(filter_numbers([0,1,2,3,4,5,6,7,8,9,11], EVEN))
+print(filter_numbers([0,1,2,3,4,5,6,7,8,9,11,13], PRIME))
 
 
 #for i in range(3, 6 // 3):
