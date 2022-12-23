@@ -31,12 +31,12 @@ PRIME = "prime"
 def filter_numbers(xstr, d_type):
     x = []
 
-    if d_type == ODD:
+    if d_type == EVEN:
         for i in xstr:
             if i % 2 == 0:
                 x.append(i)
 
-    elif d_type == EVEN:
+    elif d_type == ODD:
         for i in xstr:
             if i % 2 != 0:
                 x.append(i)
@@ -57,7 +57,7 @@ def filter_numbers(xstr, d_type):
                 x.append(i)
     return x
 
-print(filter_numbers([0,1,2,3,4,5,6,7,8,9,11],PRIME))
+print(filter_numbers([0,1,2,3,4,5,6,7,8,9,11], EVEN))
 
 
 #for i in range(3, 6 // 3):
